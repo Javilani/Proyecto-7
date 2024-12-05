@@ -1,0 +1,14 @@
+.footer {
+    background-color: #343a40; /* Color oscuro */
+    color: #fff; /* Texto claro */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00bcd4; /* Azul claro para hover */
+}

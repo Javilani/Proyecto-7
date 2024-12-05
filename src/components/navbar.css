@@ -1,0 +1,12 @@
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none; /* Elimina el borde del botón hamburguesa */
+}
+
+.navbar-nav .btn {
+    border-radius: 20px; /* Botones con esquinas redondeadas */
+}

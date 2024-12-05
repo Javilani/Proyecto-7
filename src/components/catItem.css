@@ -1,0 +1,13 @@
+.cat-item {
+    max-width: 300px; /* Tamaño máximo de la tarjeta */
+    margin: auto; /* Centra la tarjeta */
+    margin-bottom: 20px; /* Espaciado inferior entre las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que los elementos sobresalgan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.cat-item img {
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+    height: 200px; /* Tamaño uniforme para las imágenes */
+}
