@@ -1,4 +1,4 @@
-import { CatList } from "../components/CatList"
+import { CatList } from "../components/cats/CatList"
 
 export const CatsPage = () => {
     return (

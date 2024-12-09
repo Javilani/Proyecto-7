@@ -1,4 +1,3 @@
-import './catItem.css';
 
 export const CatItem = ({ cat }) => {
     return (

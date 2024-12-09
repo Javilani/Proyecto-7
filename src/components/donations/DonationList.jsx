@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getAllDonations } from "../services/apiProyecto"
+import { getAllDonations } from "../../services/apiProyecto"
 import { DonationItem } from "./DonationItem";
 
 

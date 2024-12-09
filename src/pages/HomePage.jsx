@@ -1,9 +1,9 @@
-import { CatList } from "../components/CatList"
-import { DonationList } from "../components/DonationList"
-import gatoCalico from "../assets/img/gato-calico.jpeg";
-import gatoGris from "../assets/img/gato-gris.jpg";
+import { CatList } from "../components/cats/CatList"
+import { DonationList } from "../components/donations/DonationList"
+import gatoOliendo from "../assets/img/gato-oliendo.jpg";
+import gatoMesa from "../assets/img/gato-sobre-mesa.jpg";
 import { Link } from "react-router-dom";
-import gatitoDescansando from "../assets/img/gatito-descansando.jpg";
+import gatitoTierno from "../assets/img/gato-tierno.jpg";
 
 export const HomePage = () => {
     return (
@@ -42,15 +42,15 @@ export const HomePage = () => {
 
                         <div className="d-flex justify-content-center">
                             <img
-                                src={gatoCalico}
+                                src={gatoOliendo}
                                 className="d-block"
                                 alt="Gatitos durmiendo"
-                                style={{ width: "70%", height: "85vh" }}
+                                style={{ width: "70%", height: "auto" }}
                             />
                         </div>
                         <div className="container mx-auto">
                             <div className="carousel-caption text-start bg-dark bg-opacity-50 p-4">
-                                <h1>Gatitos Durmiendo</h1>
+                                <h1>Gatito Oliendo</h1>
                                 <p className="opacity-75">
                                     Los gatitos más adorables que jamás hayas visto.
                                 </p>
@@ -64,10 +64,10 @@ export const HomePage = () => {
 
                         <div className="d-flex justify-content-center">
                             <img
-                                src={gatoGris}
+                                src={gatoMesa}
                                 className="d-block"
                                 alt="Gatitos durmiendo"
-                                style={{ width: "70%", height: "85vh" }}
+                                style={{ width: "70%", height: "auto" }}
                             />
                         </div>
                         <div className="container">
@@ -86,10 +86,10 @@ export const HomePage = () => {
 
                         <div className="d-flex justify-content-center">
                             <img
-                                src={gatitoDescansando}
+                                src={gatitoTierno}
                                 className="d-block"
                                 alt="Gatitos durmiendo"
-                                style={{ width: "70%", height: "85vh" }}
+                                style={{ width: "70%", height: "auto" }}
                             />
                         </div>
                         <div className="container">

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllCats } from "../services/apiProyecto";
+import { getAllCats } from "../../services/apiProyecto";
 import { CatItem } from "./CatItem";
 
 export const CatList = () => {
