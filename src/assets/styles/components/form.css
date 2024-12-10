@@ -1,0 +1,44 @@
+.container {
+    height: 80vh; /* Con esto hago que el footer se vaya para abajo, container usa el 80% de la altura de la página */
+
+}
+
+.form {
+    max-width: 28rem;
+
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+
+}
+
+.form__group {
+    margin-bottom: 1rem;
+}
+
+.form__group label {
+    display: block;
+    margin-bottom: .3rem;
+    font-weight: bold;
+}
+
+.form__group input {
+    width: 100%;
+    padding: .3rem 1rem;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    padding: .8rem;
+    background-color: #4575fa;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.025);
+}
