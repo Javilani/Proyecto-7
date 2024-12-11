@@ -1,4 +1,4 @@
-import { useReducer } from "react"
+import { useEffect, useReducer } from "react"
 import { loginUser, registerUser } from "../../services/apiProyecto";
 import { AuthContext } from "./userContext";
 import { AuthReducer } from "./userReducer";
@@ -12,6 +12,19 @@ const initialState = {
 export const AuthProvider = ({ children }) => {
 
     const [ state, dispatch ] = useReducer(AuthReducer, initialState);
+
+    // Con esto, cada vez que mande una petición, me va a verificar si es que el Token es válido o no.
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        if (token && user) {
+            dispatch({
+                type: 'LOGIN_USER',
+                payload: { user, token }
+            })
+        }
+    })
 
     const register = async(userData) => {
         try {

@@ -1,6 +1,13 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../context/User/userContext';
 
 export const Navbar = () => {
+    const { user, logout } = useContext(AuthContext);
+
+
+
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
@@ -36,8 +43,18 @@ export const Navbar = () => {
                     </div>
                     {/* Grupo de botones a la derecha */}
                     <div className="ms-auto d-flex">
-                        <Link className="btn btn-light mx-1" to="/login">Login</Link>
-                        <Link className="btn btn-outline-light mx-1" to="/cart">Carro</Link>
+                        {
+                            !user ? (
+                                <li>
+                                    <Link className="btn btn-light mx-1" to="/login">Login</Link>
+                                </li>
+                            ) : (
+                                <button className='logout-button' onClick={logout}>Logout</button>
+                            )
+                    }
+                        <li>
+                            <Link className="btn btn-outline-light mx-1" to="/cart">Carro</Link>
+                        </li>
                     </div>
                 </div>
             </div>

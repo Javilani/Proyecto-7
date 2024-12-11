@@ -30,6 +30,18 @@ const apiClient = axios.create({
     baseURL: API_URL,
 })
 
+// Para que cada vez que mande un registerUser o un loginUser, se captura el token y se verifica quee esté ahí.
+apiClient.interceptors.request.use(    // Esto viene de axios
+    (config) => {
+        const token = localStorage.getItem('token');
+        if(token) {
+            config.headers["authorization"] = `Bearer ${token}`
+        }
+        return config
+    },
+    (error) => Promise.reject(error)
+)
+
 export const registerUser = async(userData) => {
     try {
         const { data } = await apiClient.post('/create', userData)

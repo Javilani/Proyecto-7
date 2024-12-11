@@ -28,7 +28,7 @@
     box-sizing: border-box;
 }
 
-.button {
+.login-button{
     width: 100%;
     padding: .8rem;
     background-color: #4575fa;
@@ -39,6 +39,6 @@
     transition: .3s;
 }
 
-button:hover {
+login-button:hover {
     transform: scale(1.025);
 }
