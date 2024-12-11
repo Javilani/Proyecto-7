@@ -34,7 +34,7 @@ export const LoginForm = () => {
     }
 
     return (
-        <div className="container">
+        <div className="form-container">
         <form className="form flex-center" onSubmit={handleSubmit}>
             <div className="form__group">
                 <label htmlFor="email">Correo Electrónico</label>
