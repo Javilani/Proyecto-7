@@ -1,0 +1,28 @@
+.header-homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.opciones {
+    margin-top: 20px;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 200px;
+}
+
+.opc-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-opciones {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+}

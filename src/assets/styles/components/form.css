@@ -31,7 +31,8 @@
 .login-button{
     width: 100%;
     padding: .8rem;
-    background-color: #4575fa;
+    background-color: black;
+    color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;

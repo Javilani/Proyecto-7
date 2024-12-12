@@ -1,15 +1,19 @@
-import { CatList } from "../components/cats/CatList"
-import { DonationList } from "../components/donations/DonationList"
 import gatoOliendo from "../assets/img/gato-oliendo.jpg";
 import gatoMesa from "../assets/img/gato-sobre-mesa.jpg";
 import { Link } from "react-router-dom";
 import gatitoTierno from "../assets/img/gato-tierno.jpg";
+import donation from "../assets/img/donation.png";
+import dosGatitos from "../assets/img/dos-gatitos.png";
+import equipoTrabajo from "../assets/img/equipo-trabajo.jpg";
+import blog from "../assets/img/blog.jpg";
+import vet from "../assets/img/vet.jpg";
+import tienda from "../assets/img/tienda-mascotas.jpg";
 
 export const HomePage = () => {
     return (
         <>
-            <header>
-                <h1>Fundación para Gatitos</h1>
+            <header className="header-homepage">
+                <h1 id="h1-homepage">Fundación para Gatitos</h1>
             </header>
 
             <div id="myCarousel" className="carousel slide mb-6" data-bs-ride="carousel">
@@ -50,12 +54,12 @@ export const HomePage = () => {
                         </div>
                         <div className="container mx-auto">
                             <div className="carousel-caption text-start bg-dark bg-opacity-50 p-4">
-                                <h1>Gatito Oliendo</h1>
+                                <h1>Conócelos a todos</h1>
                                 <p className="opacity-75">
-                                    Los gatitos más adorables que jamás hayas visto.
+                                    Aquí podrás conocer a todos los michis que buscan un hogar.
                                 </p>
                                 <p>
-                                <Link className="btn btn-lg btn-dark" to="/cats">¡Adopta uno hoy!</Link>
+                                    <Link className="btn btn-lg btn-dark" to="/cats">¡Adopta uno hoy!</Link>
                                 </p>
                             </div>
                         </div>
@@ -72,12 +76,12 @@ export const HomePage = () => {
                         </div>
                         <div className="container">
                             <div className="carousel-caption text-start bg-dark bg-opacity-50 p-4">
-                                <h1>Gatito mirando al horizonte</h1>
+                                <h1>¿Quieres ayudar?</h1>
                                 <p className="opacity-75">
-                                    El gatito más adorables que jamás hayas visto.
+                                    Puedes realizar una donación para poder seguir ayudando a más gatitos.
                                 </p>
                                 <p>
-                                <Link className="btn btn-lg btn-dark" to="/donations">¡Dona hoy!</Link>
+                                    <Link className="btn btn-lg btn-dark" to="/donations">¡Dona hoy!</Link>
                                 </p>
                             </div>
                         </div>
@@ -94,12 +98,12 @@ export const HomePage = () => {
                         </div>
                         <div className="container">
                             <div className="carousel-caption text-start bg-dark bg-opacity-50 p-4">
-                                <h1>Gatitos Durmiendo</h1>
+                                <h1>¿Quiénes somos?</h1>
                                 <p className="opacity-75">
-                                    Los gatitos más adorables que jamás hayas visto.
+                                    Aquí puedes conocer un poco más sobre nuestra labor gatuna.
                                 </p>
                                 <p>
-                                <Link className="btn btn-lg btn-dark" to="/about">Conócenos</Link>
+                                    <Link className="btn btn-lg btn-dark" to="/about">Conócenos</Link>
                                 </p>
                             </div>
                         </div>
@@ -131,9 +135,33 @@ export const HomePage = () => {
                 </button>
             </div>
 
+            <section className="opciones">
+            <div className="opc-card">
+                <img src={dosGatitos} alt="" className="img-opciones" />
+                <Link className="btn btn-lg btn-dark" to="/cats">Adopciones</Link>
+            </div>
+            <div className="opc-card">
+                <img src={donation} alt="" className="img-opciones" />
+                <Link className="btn btn-lg btn-dark" to="/donations">Donaciones</Link>
+                </div>
+                <div className="opc-card">
+                <img src={equipoTrabajo} alt="" className="img-opciones" />
+                <Link className="btn btn-lg btn-dark" to="/about">Conócenos</Link>
+                </div>
+                <div className="opc-card">
+                <img src={blog} alt="" className="img-opciones" />
+                <Link className="btn btn-lg btn-dark" to="/prox">Blog</Link>
+                </div>
+                <div className="opc-card">
+                <img src={vet} alt="" className="img-opciones" />
+                <Link className="btn btn-lg btn-dark" to="/prox">Veterinarios</Link>                
+                </div>
+                <div className="opc-card">
+                <img src={tienda} alt="" className="img-opciones" />
+                <Link className="btn btn-lg btn-dark" to="/prox">Tienda</Link>                
+                </div>
+            </section>
 
-            <CatList />
-            <DonationList />
         </>
     )
 }

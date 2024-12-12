@@ -1,0 +1,39 @@
+header {
+    display: flex;
+}
+
+.img-about {
+    width: 50vw;
+    border-radius: 50px;
+    height: auto;
+}
+
+.about-text {
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.mis-vis {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.nuestra-historia {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.nuestra-historia div {
+    flex: 1; 
+}
+
+.img-story {
+    max-height: 400px;
+    border-radius: 50px;
+    width: auto;
+    object-fit: cover;
+}

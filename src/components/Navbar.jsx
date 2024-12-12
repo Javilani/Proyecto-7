@@ -39,6 +39,12 @@ export const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="btn btn-outline-light mx-1" to="/donations">Donaciones</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="btn btn-outline-light mx-1" to="/prox">Blog</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="btn btn-outline-light mx-1" to="/prox">Veterinarios</Link>
+                            </li>
                         </ul>
                     </div>
                     {/* Grupo de botones a la derecha */}
