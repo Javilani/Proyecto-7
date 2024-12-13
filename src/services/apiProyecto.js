@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const BASE_URL = 'https://proyecto-6-tvf2.onrender.com';
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://proyecto-6-tvf2.onrender.com';
+//const BASE_URL = 'http://localhost:3000';
 
 const apiProductsClients = axios.create({
     baseURL: BASE_URL
@@ -26,9 +26,9 @@ export const getAllDonations = async () => {
 }
 
 // Para traer los usuarios
-//const API_URL = 'https://proyecto-6-tvf2.onrender.com/users';
+const API_URL = 'https://proyecto-6-tvf2.onrender.com/users';
 
-const API_URL = 'http://localhost:3000/users';
+//const API_URL = 'http://localhost:3000/users';
 
 const apiClient = axios.create({
     baseURL: API_URL,

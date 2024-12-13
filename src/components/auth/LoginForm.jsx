@@ -33,36 +33,48 @@ export const LoginForm = () => {
         }
     }
 
+    // Redirigir al formulario de registro
+    const redirectToRegister = () => {
+        navigate('/register');
+    };
+
     return (
         <div className="form-container">
-        <form className="form flex-center" onSubmit={handleSubmit}>
-            <div className="form__group">
-                <label htmlFor="email">Correo Electrónico</label>
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Por favor ingresa tu email"
-                    value={credentials.email}
-                    onChange={handleChange}
-                    required
-                />
-            </div>
-            <div className="form__group">
-                <label htmlFor="password">Contraseña</label>
-                <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Por favor ingresa tu contraseña"
-                    value={credentials.password}
-                    onChange={handleChange}
-                    required
-                />
-            </div>
-            {error && <p className="form-error">{error}</p>}
-            <button type="submit" className="button login-button">Iniciar Sesión</button>
-        </form>
+            <form className="form flex-center" onSubmit={handleSubmit}>
+                <div className="form__group">
+                    <label htmlFor="email">Correo Electrónico</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Por favor ingresa tu email"
+                        value={credentials.email}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className="form__group">
+                    <label htmlFor="password">Contraseña</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Por favor ingresa tu contraseña"
+                        value={credentials.password}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                {error && <p className="form-error">{error}</p>}
+                <button type="submit" className="button login-button">Iniciar Sesión</button>
+                <button
+                    type="button"
+                    className="button register-button"
+                    onClick={redirectToRegister}
+                >
+                    Crear cuenta
+                </button>
+            </form>
         </div>
     )
 }

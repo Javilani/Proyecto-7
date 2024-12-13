@@ -1,6 +1,5 @@
 .form-container {
     height: 80vh; /* Con esto hago que el footer se vaya para abajo, container usa el 80% de la altura de la página */
-
 }
 
 .form {
@@ -9,7 +8,6 @@
     margin: 2rem auto;
     padding: 1.5rem;
     border: 1px solid #ddd;
-
 }
 
 .form__group {
@@ -40,6 +38,22 @@
     transition: .3s;
 }
 
-login-button:hover {
+.login-button:hover {
     transform: scale(1.025);
+}
+
+.register-button {
+    width: 100%;
+    padding: .8rem;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: lightgray;
 }

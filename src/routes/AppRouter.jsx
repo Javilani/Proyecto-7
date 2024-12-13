@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { HomePage, About, CatsPage, DonationsPage, LoginPage, ProximamentePage } from '../pages';
+import { HomePage, About, CatsPage, DonationsPage, LoginPage, ProximamentePage, RegisterForm } from '../pages';
 import { Navbar, Footer } from '../components';
 import { CartPage } from '../pages/CartPage';
 import { PrivateRoute } from './PrivateRoute';
@@ -15,6 +15,7 @@ export const AppRouter = () => {
             <Route path='/cats' element={ <CatsPage /> } />
             <Route path='/donations' element={ <DonationsPage /> } />
             <Route path='/login' element={ <LoginPage /> } />
+            <Route path='/register' element={ <RegisterForm />} />
             <Route path='/prox' element={ <ProximamentePage /> }/>
             {/* <Route path='/cart' element={ <CartPage />} /> */}
             <Route 
