@@ -1,5 +1,6 @@
 .cat-item {
     max-width: 300px; /* Tamaño máximo de la tarjeta */
+    min-height: 520px;
     margin: auto; /* Centra la tarjeta */
     margin-bottom: 20px; /* Espaciado inferior entre las tarjetas */
     border-radius: 10px; /* Bordes redondeados */
@@ -9,5 +10,6 @@
 
 .cat-item img {
     object-fit: cover; /* Asegura que las imágenes no se deformen */
-    height: 200px; /* Tamaño uniforme para las imágenes */
+    height: 250px; /* Tamaño uniforme para las imágenes */
+
 }

@@ -6,7 +6,7 @@ import { CartItem } from "./CartItem"
 export const CartList = () => {
     const { cart, clearCart } = useContext(CartContext)
 
-    if(!cart || cart.lenght === 0) {
+    if(!cart || cart.length === 0) {
         return (
             <div className="cart-list empty">
                 <h2>Tu carrito está vacío</h2>

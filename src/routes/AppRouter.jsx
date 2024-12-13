@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { HomePage, About, CatsPage, DonationsPage, LoginPage, ProximamentePage } from '../pages';
 import { Navbar, Footer } from '../components';
 import { CartPage } from '../pages/CartPage';
-// import { PrivateRoute } from './PrivateRoute';
+import { PrivateRoute } from './PrivateRoute';
 
 export const AppRouter = () => {
     return ( 
@@ -15,16 +15,16 @@ export const AppRouter = () => {
             <Route path='/cats' element={ <CatsPage /> } />
             <Route path='/donations' element={ <DonationsPage /> } />
             <Route path='/login' element={ <LoginPage /> } />
-            <Route path='/cart' element={ <CartPage />} />
             <Route path='/prox' element={ <ProximamentePage /> }/>
-            {/* <Route 
+            {/* <Route path='/cart' element={ <CartPage />} /> */}
+            <Route 
             path='/cart' 
             element={
                 <PrivateRoute>
-                    <CartPage />    Lo que habría que hacer si quiero una ruta privada que solo se puede ver cuando he iniciado sesión
+                    <CartPage />    {/*Lo que habría que hacer si quiero una ruta privada que solo se puede ver cuando he iniciado sesión*/}
                 </PrivateRoute> 
                 } 
-            /> */}
+            />
         </Routes>
         </div>
         <Footer />

@@ -55,7 +55,9 @@ export const Navbar = () => {
                                     <Link className="btn btn-light mx-1" to="/login">Login</Link>
                                 </li>
                             ) : (
-                                <button className='logout-button' onClick={logout}>Logout</button>
+                                <li>
+                                <button className='btn btn-danger mx-1' onClick={logout}>Logout</button>
+                                </li>
                             )
                     }
                         <li>

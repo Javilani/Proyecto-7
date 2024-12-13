@@ -5,9 +5,9 @@ import { AuthReducer } from "./userReducer";
 
 
 const initialState = {
-    user: null,
-    token: null
-}
+    user: JSON.parse(localStorage.getItem('user')) || null,
+    token: localStorage.getItem('token') || null,
+};
 
 export const AuthProvider = ({ children }) => {
 
@@ -22,9 +22,9 @@ export const AuthProvider = ({ children }) => {
             dispatch({
                 type: 'LOGIN_USER',
                 payload: { user, token }
-            })
+            });
         }
-    })
+    }, []);
 
     const register = async(userData) => {
         try {
@@ -50,20 +50,27 @@ export const AuthProvider = ({ children }) => {
 
     const login = async(credentials) => {
         try {
-            const data = await loginUser(credentials)
-            const { token } = data;
+            const data = await loginUser(credentials);
+            console.log("Respuesta de loginUser:", data);
+
+            const { data: token } = data;
 
             if(token) {
                 const user = { email: credentials.email };
-                localStorage.setIten('token', token);
-                localStorage.setItem('user', JSON.stringify(user))
+                localStorage.setItem('token', token);
+                localStorage.setItem('user', JSON.stringify(user));
+
+                console.log("Token guardado:", token);
+                console.log("Usuario guardado:", user);
 
                 dispatch({
                     type: 'LOGIN_USER',
-                    payload: { user, token }
-                })
+                    payload: { user, token },
+                });
+                console.log("Después de dispatch");
             }
         } catch (error) {
+            console.error("Error al autenticar el usuario:", error.message);
             throw new Error(`Error al autenticar el usuario. Error: ${error}`);
         }
     }
