@@ -53,15 +53,21 @@ export const AuthProvider = ({ children }) => {
             const data = await loginUser(credentials);
             console.log("Respuesta de loginUser:", data);
 
-            const { data: token } = data;
+            const { data: token, user } = data;
 
-            if(token) {
-                const user = { email: credentials.email };
+            if (token && user) {
                 localStorage.setItem('token', token);
-                localStorage.setItem('user', JSON.stringify(user));
-
+                localStorage.setItem('user', JSON.stringify({ email: user.email }));
+                localStorage.setItem('lastname', JSON.stringify({lastname: user.lastname}));
+    
+                // Guardamos el nombre (directamente desde user)
+                const username = { name: user.name };
+                localStorage.setItem('name', JSON.stringify(username));
+    
                 console.log("Token guardado:", token);
                 console.log("Usuario guardado:", user);
+                console.log("Nombre de usuario guardado:", username);
+                console.log("Apellido guardado:", user.lastname);
 
                 dispatch({
                     type: 'LOGIN_USER',
@@ -78,6 +84,8 @@ export const AuthProvider = ({ children }) => {
     const logout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('user');
+        localStorage.removeItem('name');
+        localStorage.removeItem('lastname');
 
         dispatch({ type: 'LOGOUT_USER' })
     }

@@ -48,18 +48,23 @@ export const Navbar = () => {
                         </ul>
                     </div>
                     {/* Grupo de botones a la derecha */}
-                    <div className="ms-auto d-flex">
+                    <div className="ms-auto d-flex align-items-center">
                         {
                             !user ? (
                                 <li>
                                     <Link className="btn btn-light mx-1" to="/login">Login</Link>
                                 </li>
                             ) : (
-                                <li>
-                                <button className='btn btn-danger mx-1' onClick={logout}>Logout</button>
-                                </li>
+                                <>
+                                    <Link className="list-unstyled text-white mx-1 mt-4" to="/profile">
+                                        {JSON.parse(localStorage.getItem('name'))?.name}
+                                    </Link>
+                                    <li>
+                                        <button className="btn btn-danger mx-1" onClick={logout}>Logout</button>
+                                    </li>
+                                </>
                             )
-                    }
+                        }
                         <li>
                             <Link className="btn btn-outline-light mx-1" to="/cart">Carro</Link>
                         </li>

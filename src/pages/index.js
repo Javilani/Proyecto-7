@@ -6,6 +6,7 @@ import { DonationsPage } from "./DonationsPage";
 import { LoginPage } from "./LoginPage";
 import { ProximamentePage } from "./ProximamentePage";
 import { RegisterForm } from "../components/auth/RegisterForm";
+import { Profile } from "./Profile";
 
 export {
     HomePage,
@@ -14,5 +15,6 @@ export {
     DonationsPage,
     LoginPage,
     ProximamentePage,
-    RegisterForm
+    RegisterForm,
+    Profile
 }

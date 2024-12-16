@@ -4,7 +4,7 @@ export const DonationsPage = () => {
     return (
         <>
             <header>
-                <h1>¡Realiza una donación!</h1>
+                <h1 >¡Realiza una donación!</h1>
             </header>
 
             <DonationList />
