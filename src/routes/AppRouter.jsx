@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { HomePage, About, CatsPage, DonationsPage, LoginPage, ProximamentePage, RegisterForm, Profile } from '../pages';
+import { HomePage, About, CatsPage, DonationsPage, LoginPage, ProximamentePage, RegisterForm, Profile, MercadoPagoStatus } from '../pages';
 import { Navbar, Footer } from '../components';
 import { CartPage } from '../pages/CartPage';
 import { PrivateRoute } from './PrivateRoute';
@@ -18,13 +18,22 @@ export const AppRouter = () => {
             <Route path='/register' element={ <RegisterForm />} />
             <Route path='/profile' element={ <Profile />} />
             <Route path='/prox' element={ <ProximamentePage /> }/>
+
             <Route 
             path='/cart' 
             element={
                 <PrivateRoute>
-                    <CartPage /> 
+                    <CartPage />
                 </PrivateRoute> 
                 } 
+            />
+            <Route 
+                path='/mercadopago/status'
+                element={
+                    <PrivateRoute>
+                        <MercadoPagoStatus />
+                    </PrivateRoute>
+                }
             />
         </Routes>
         </div>

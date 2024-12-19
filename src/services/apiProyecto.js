@@ -3,7 +3,7 @@ import axios from 'axios';
 const BASE_URL = 'https://proyecto-6-tvf2.onrender.com';
 //const BASE_URL = 'http://localhost:3000';
 
-const apiProductsClients = axios.create({
+export const apiProductsClients = axios.create({
     baseURL: BASE_URL
 })
 
@@ -30,7 +30,7 @@ const API_URL = 'https://proyecto-6-tvf2.onrender.com/users';
 
 //const API_URL = 'http://localhost:3000/users';
 
-const apiClient = axios.create({
+export const apiClient = axios.create({
     baseURL: API_URL,
 })
 
@@ -71,3 +71,10 @@ export const loginUser = async(credentials) => {
         throw new Error(`Credenciales inválidas. ${error}`)
     }
 }
+
+const MP_URL = 'https://proyecto-6-tvf2.onrender.com/mercadoPago';
+//const MP_URL = 'http://localhost:3000/mercadoPago';
+
+export const apiMercadoPago = axios.create({
+    baseURL: MP_URL,
+})

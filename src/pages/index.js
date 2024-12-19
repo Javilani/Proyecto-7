@@ -7,6 +7,7 @@ import { LoginPage } from "./LoginPage";
 import { ProximamentePage } from "./ProximamentePage";
 import { RegisterForm } from "../components/auth/RegisterForm";
 import { Profile } from "./Profile";
+import { MercadoPagoStatus } from "./MercadoPagoStatus";
 
 export {
     HomePage,
@@ -16,5 +17,6 @@ export {
     LoginPage,
     ProximamentePage,
     RegisterForm,
-    Profile
+    Profile,
+    MercadoPagoStatus
 }
