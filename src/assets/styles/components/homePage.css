@@ -6,6 +6,11 @@
     margin: 20px 0;
 }
 
+.img-carousel {
+    width: 90%; 
+    height: auto 
+}
+
 .opciones {
     margin-top: 20px;
     padding: 2rem 5rem;
@@ -25,4 +30,19 @@
     border-radius: 50%;
     width: 280px;
     height: 280px;
+}
+
+/*Responsividad */
+
+@media (max-width: 576px) {
+    #myCarousel {
+        display: none;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .img-carousel {
+        width: 100%;
+    }
 }

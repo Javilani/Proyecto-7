@@ -1,4 +1,4 @@
-header {
+.section-about {
     display: flex;
 }
 
@@ -6,6 +6,8 @@ header {
     width: 50vw;
     border-radius: 50px;
     height: auto;
+    object-fit: cover;
+    max-height: 80vh;
 }
 
 .about-text {
@@ -36,4 +38,50 @@ header {
     border-radius: 50px;
     width: auto;
     object-fit: cover;
+}
+
+/*Responsividad */
+@media (max-width: 1150px) {
+    .about-text {
+        font-size: 1.2rem;
+    }
+
+    .nuestra-historia {
+        display: block;
+    }
+    .img-story {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-about {
+        display: block;
+        margin: 0;
+    }
+
+    .img-about {
+        display: block;
+        margin: 0 auto;
+        width: 80vw
+    }
+
+    .about-text {
+        margin-left: 0;
+        font-size: 1.4rem;
+    }
+
+    .img-story {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .img-about {
+        width: 70vw
+    }
+    .img-story {
+        width: 70vw;
+    }
 }

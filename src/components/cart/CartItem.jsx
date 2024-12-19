@@ -13,9 +13,9 @@ export const CartItem = ({ donation }) => {
                 <h3>{donation.title}</h3>
                 <p>Precio: ${donation.price} CLP</p>
                 <div className="quantity-control">
-                    <button className="button" onClick={() => decreaseQuantity(donation._id)} disabled={donation.quantity <= 1}>-</button>
-                    <span>{donation.quantity}</span>
-                    <button className="button" onClick={() => increaseQuantity(donation._id)}>+</button>
+                    <button className="button-more-less" onClick={() => decreaseQuantity(donation._id)} disabled={donation.quantity <= 1}>-</button>
+                    <span className="product-quantity">{donation.quantity}</span>
+                    <button className="button-more-less" onClick={() => increaseQuantity(donation._id)}>+</button>
                 </div>
                 <p>Subtotal: ${(donation.price * donation.quantity).toFixed(0)} CLP</p>
             </div>
@@ -27,7 +27,6 @@ export const CartItem = ({ donation }) => {
             >
                 Eliminar
             </button>
-
         </div>
     )
 }

@@ -13,3 +13,7 @@
     height: 250px; /* Tamaño uniforme para las imágenes */
 
 }
+
+.cat-list {
+    padding-top: 1rem;
+}

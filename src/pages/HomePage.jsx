@@ -47,14 +47,13 @@ export const HomePage = () => {
                         <div className="d-flex justify-content-center">
                             <img
                                 src={gatoOliendo}
-                                className="d-block"
+                                className="d-block img-carousel"
                                 alt="Gatitos durmiendo"
-                                style={{ width: "70%", height: "auto" }}
                             />
                         </div>
-                        <div className="container mx-auto">
+                        <div className="">
                             <div className="carousel-caption text-start bg-dark bg-opacity-50 p-4">
-                                <h1>Conócelos a todos</h1>
+                                <h2>Conócelos a todos</h2>
                                 <p className="opacity-75">
                                     Aquí podrás conocer a todos los michis que buscan un hogar.
                                 </p>
@@ -69,14 +68,13 @@ export const HomePage = () => {
                         <div className="d-flex justify-content-center">
                             <img
                                 src={gatoMesa}
-                                className="d-block"
+                                className="d-block img-carousel"
                                 alt="Gatitos durmiendo"
-                                style={{ width: "70%", height: "auto" }}
                             />
                         </div>
-                        <div className="container">
+                        <div className="">
                             <div className="carousel-caption text-start bg-dark bg-opacity-50 p-4">
-                                <h1>¿Quieres ayudar?</h1>
+                                <h2>¿Quieres ayudar?</h2>
                                 <p className="opacity-75">
                                     Puedes realizar una donación para poder seguir ayudando a más gatitos.
                                 </p>
@@ -91,14 +89,13 @@ export const HomePage = () => {
                         <div className="d-flex justify-content-center">
                             <img
                                 src={gatitoTierno}
-                                className="d-block"
+                                className="d-block img-carousel"
                                 alt="Gatitos durmiendo"
-                                style={{ width: "70%", height: "auto" }}
                             />
                         </div>
-                        <div className="container">
+                        <div className="">
                             <div className="carousel-caption text-start bg-dark bg-opacity-50 p-4">
-                                <h1>¿Quiénes somos?</h1>
+                                <h2>¿Quiénes somos?</h2>
                                 <p className="opacity-75">
                                     Aquí puedes conocer un poco más sobre nuestra labor gatuna.
                                 </p>
