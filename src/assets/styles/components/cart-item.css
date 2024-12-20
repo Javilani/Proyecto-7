@@ -10,7 +10,7 @@
 }
 
 .cart-page {
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .cart-item__image {
