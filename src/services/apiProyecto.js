@@ -46,6 +46,17 @@ apiClient.interceptors.request.use(    // Esto viene de axios
     (error) => Promise.reject(error)
 )
 
+// apiClient.interceptors.request.use((response) => response, (error) => {
+//     if(error.response && error.response.status === 500) {
+//         localStorage.removeItem('token');
+//         localStorage.removeItem('user');
+//         localStorage.removeItem('name');
+//         localStorage.removeItem('lastname');
+//         window.location.href = '/login';
+//     }
+//     return Promise.reject(error);
+// })
+
 export const registerUser = async(userData) => {
     try {
         const { data } = await apiClient.post('/create', userData)
