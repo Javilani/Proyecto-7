@@ -64,6 +64,14 @@ Este proyecto es una página web desarrollada con React y Vite para una fundaci�
 
         http://localhost:5173
 
+## Deployment
+
+El sitio desplegado se puede visitar en el siguiente enlace:
+
+🌐 **[Visitar el Sitio](https://proyecto-7-ao20.onrender.com)**
+
+
+
 ## Estructura del proyecto
 
         /
