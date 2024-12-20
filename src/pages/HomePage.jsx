@@ -1,13 +1,13 @@
-import gatoOliendo from "../assets/img/gato-oliendo.jpg";
-import gatoMesa from "../assets/img/gato-sobre-mesa.jpg";
+import gatoOliendo from "/images/gato-oliendo.jpg";
+import gatoMesa from "/images/gato-sobre-mesa.jpg";
 import { Link } from "react-router-dom";
-import gatitoTierno from "../assets/img/gato-tierno.jpg";
-import donation from "../assets/img/donation.png";
-import dosGatitos from "../assets/img/dos-gatitos.png";
-import equipoTrabajo from "../assets/img/equipo-trabajo.jpg";
-import blog from "../assets/img/blog.jpg";
-import vet from "../assets/img/vet.jpg";
-import tienda from "../assets/img/tienda-mascotas.jpg";
+import gatitoTierno from "/images/gato-tierno.jpg";
+import donation from "/images/donation.png";
+import dosGatitos from "/images/dos-gatitos.png";
+import equipoTrabajo from "/images/equipo-trabajo.jpg";
+import blog from "/images/blog.jpg";
+import vet from "/images/vet.jpg";
+import tienda from "/images/tienda-mascotas.jpg";
 
 export const HomePage = () => {
     return (

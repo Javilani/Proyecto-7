@@ -1,5 +1,5 @@
-import gatoRegalon from "../assets/img/gato-regaloneando.jpeg"
-import personaYGato from "../assets/img/persona-gato.jpg"
+import gatoRegalon from "/images/gato-regaloneando.jpeg"
+import personaYGato from "/images/persona-gato.jpg"
 
 export const About = () => {
     return (

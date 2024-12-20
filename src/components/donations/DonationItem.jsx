@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/Cart/cartContext";
-import donationImg from "../../assets/img/donation.png";
+import donationImg from "/images/donation.png";
 
 export const DonationItem = ({ donation }) => {
 
