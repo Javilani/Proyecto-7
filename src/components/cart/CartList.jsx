@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/Cart/cartContext"
 import { CartItem } from "./CartItem"
-import { MercadoPagoButton } from "../Pagos/MercadoPagoButton"
+import { MercadoPagoButton } from "../pagos/MercadoPagoButton.jsx"
 
 
 export const CartList = () => {
